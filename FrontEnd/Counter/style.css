@@ -1,0 +1,96 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+position: absolute;
+top: 210px;
+left: 711px;
+}
+.container h1{
+    margin-bottom: 15px;
+    font-size: 54px;
+    margin-left: -36px;
+}
+
+#value{
+    font-size: 100px;
+    margin-left:  10px;
+
+}
+.btn-container{
+    margin:22px -67px;
+    display:flex;
+    font-family: "Schibsted Grotesk", sans-serif;
+    
+
+}
+.btn-container button{
+    font-size: 15px;
+    margin: 5px;
+      padding: 10px;
+      border: 1px solid black;
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add box-sizing for better layout control */
+}
+
+body {
+    font-family: "Schibsted Grotesk", sans-serif; /* Apply font-family to the whole document */
+    background-color: #f0f0f0; /* Add a background color */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center align content */
+    background-color: #fff; /* Add a background color */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Add border radius for a rounded appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.container h1 {
+    font-size: 2.5rem; /* Adjust font size */
+    margin-bottom: 15px;
+}
+
+#value {
+    font-size: 4rem; /* Adjust font size */
+    display: block; /* Ensure it takes up full width */
+    margin: 20px auto; /* Center the value */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* Center align buttons */
+}
+
+.btn-container button {
+    font-size: 1rem; /* Adjust font size */
+    margin: 0 5px; /* Add margin between buttons */
+    padding: 10px 20px; /* Add padding for better clickable area */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition for smooth effect */
+}
+
+.btn-container button:hover {
+    background-color: #0056b3; /* Darken background color on hover */
+}

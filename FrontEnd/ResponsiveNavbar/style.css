@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ECF0F1;
+   
+}
+ul{
+    list-style-type: none;
+}
+a{   
+    text-decoration: none;
+    
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+
+/* for desktop site */
+@media screen and (min-width:992px){
+.navCenter{
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+.navHeader{
+    display:flex;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 93px;
+    margin-right: -20px;
+    justify-content: space-between;
+    
+
+}
+.navToggle{
+        display: none;
+    }
+
+.links {
+    display: flex;
+    height: auto;
+   
+}
+.links a{
+    margin:0 1.5rem;
+    font-size: 1.5rem;
+    
+}
+.socialIcons{
+    display: flex;
+    margin-right: 158px;
+}
+.socialIcons a{
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    
+}
+
+
+}
+
+/* 
+for mobile site */
+@media screen and (max-width:992px) {
+    .navHeader{
+        display:flex;
+        align-items: center;
+        padding: 1rem;
+        justify-content: space-between;
+       
+    
+    }
+    
+    .navToggle{
+        font-size: 1.5rem;
+        background: transparent;
+        cursor: pointer;
+        
+    }
+    .navToggle:hover{
+        transform:rotate(90deg);
+    }
+    .socialIcons{
+        display: none;
+    }
+    .links{
+        display: none;
+        overflow:hidden;
+    }
+    .links.showLinks{
+        display: flex; /* Show the links when .showLinks class is added */
+        flex-direction: column; /* Stack the links vertically */
+        margin-top: 10px 10px; /* Add some space at the top */
+    
+    }
+    .links a {
+        margin: 10px 20px;; /* Add space between list items (top and bottom) */
+        font-size: 1.2rem;
+        
+        line-height: 1.5;
+
+    }
+}
